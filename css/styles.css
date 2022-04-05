@@ -728,6 +728,19 @@ link:active {
 .company-size:hover {
   border-color: var(--color-blue);
 }
+/* рассылка в футере */
+.mail-btn {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.form {
+  margin-left: 93px;
+  width: 570px;
+  height: 86px;
+}
 /* <---бэк дроп--> */
 .backdrop {
   position: fixed;
