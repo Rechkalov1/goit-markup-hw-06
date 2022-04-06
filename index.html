@@ -440,12 +440,23 @@
           </ul>
         </div>
         <div>
-          <form class="form">
+          <form class="list-mail">
             <h2 class="join">Подпишитесь на рассылку</h2>
             <label>
-              <input type="text" name="email" placeholder="Email" />
+              <input
+                type="text"
+                class="input"
+                name="email"
+                placeholder="E-mail"
+              />
             </label>
-            <button type="submit" class="mail-btn">Подписаться</button>
+            <button type="submit" class="mail-btn">
+              <span class="subscribe">Подписаться</span>
+            </button>
+            <a class="icon-link"
+              ><svg class="icon-send">
+                <use href="./images/icons.svg#icon-send"></use></svg
+            ></a>
           </form>
         </div>
       </div>
@@ -454,6 +465,21 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close type="button" class="exit-btn"></button>
+        <form class="form">
+          <label class="form-field">
+            <span class="form-label">Имя</span>
+            <input type="text" class="form-input" name="name" placeholder=" " />
+          </label>
+          <label>
+            <span class="form-label">Email</span>
+            <input
+              type="email"
+              class="form-input"
+              name="mail"
+              placeholder=" "
+            />
+          </label>
+        </form>
       </div>
     </div>
     <script src="modal.js"></script>

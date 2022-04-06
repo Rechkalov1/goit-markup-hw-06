@@ -558,7 +558,7 @@ link:active {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+  margin-bottom: 20px;
   color: var(--color-white);
 }
 .footer-container {
@@ -730,16 +730,54 @@ link:active {
 }
 /* рассылка в футере */
 .mail-btn {
+  position: relative;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+
+  letter-spacing: 0.06em;
+  background: var(--color-blue);
+  color: var(--color-white);
+  border-radius: 4px;
+
   width: 200px;
   height: 50px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  transition: background-color 250ms var(--transition-timing-func),
+    box-shadow 250ms var(--transition-timing-func);
+
+  cursor: pointer;
 }
-.form {
+.subscribe {
+  margin-right: 29px;
+}
+.icon-send {
+  position: relative;
+  bottom: 45%;
+  left: 90%;
+  width: 24px;
+  height: 24px;
+  display: block;
+  fill: var(--color-white);
+}
+.list-mail {
   margin-left: 93px;
   width: 570px;
   height: 86px;
+}
+.icon-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
 }
 /* <---бэк дроп--> */
 .backdrop {
