@@ -464,14 +464,35 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close type="button" class="exit-btn"></button>
+        <button data-modal-close type="button" class="exit-btn">
+          <svg class="ex-btn">
+            <use href="./images/icons.svg#close-black-18dp-2-1-1"></use>
+          </svg>
+        </button>
         <form class="form">
-          <label class="form-field">
+          <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+
+          <label class="form-wrapper">
             <span class="form-label">Имя</span>
-            <input type="text" class="form-input" name="name" placeholder=" " />
+            <svg class="form-image">
+              <use href="./images/icons.svg#person-black"></use>
+            </svg>
+            <input class="form-input" type="text" name="name" placeholder=" " />
           </label>
-          <label>
-            <span class="form-label">Email</span>
+
+          <label class="form-wrapper">
+            <span class="form-label">Телефон</span>
+            <svg class="form-image">
+              <use href="./images/icons.svg#phone-black"></use>
+            </svg>
+            <input class="form-input" type="tel" name="tel" placeholder=" " />
+          </label>
+
+          <label class="form-wrapper">
+            <span class="form-label">Почта</span>
+            <svg class="form-image">
+              <use href="./images/icons.svg#email-black"></use>
+            </svg>
             <input
               type="email"
               class="form-input"
@@ -479,6 +500,29 @@
               placeholder=" "
             />
           </label>
+
+          <label class="form-wrapper">
+            <span class="form-label">Комментарий</span>
+            <textarea
+              class="textarea form-input"
+              name="comments"
+              rows="5"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+
+          <label class="checkbox-label"
+            ><input class="checkbox" type="checkbox" />
+            <span class="checkbox-icon"></span>
+            <span class="checkbox-style all-txt"
+              >Соглашаюсь с рассылкой и принимаю</span
+            >
+            <span class="checkbox-color all-txt">Условия договора</span>
+          </label>
+
+          <button class="btn-submit" type="submit">
+            <span>Отправить</span>
+          </button>
         </form>
       </div>
     </div>
