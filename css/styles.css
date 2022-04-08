@@ -735,22 +735,25 @@ link:active {
 /* рассылка в футере */
 .mail-btn {
   position: relative;
-
+  width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.6;
-
   letter-spacing: 0.06em;
   background: var(--color-blue);
   color: var(--color-white);
   border-radius: 4px;
-
-  width: 200px;
-  height: 50px;
   transition: background-color 250ms var(--transition-timing-func),
     box-shadow 250ms var(--transition-timing-func);
 
   cursor: pointer;
+}
+.mail-btn:hover {
+  background: #1c84d8;
+}
+.mail-btn:focus {
+  background: #1c84d8;
 }
 .subscribe {
   margin-right: 29px;
@@ -777,11 +780,16 @@ link:active {
 .input {
   width: 358px;
   height: 50px;
+  color: var(--color-white);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+  transition: border-color 250ms var(--transition-timing-func);
+}
+.input:focus {
+  border: 1px solid #2196f3;
 }
 .form-input {
   width: 448px;
@@ -791,6 +799,7 @@ link:active {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 40px;
+  transition: border-color 250ms var(--transition-timing-func);
 }
 
 .form-wrapper:focus-within > .form-image {
@@ -809,6 +818,7 @@ link:active {
   left: 4.25%;
   width: 18px;
   height: 18px;
+  transition: fill 250ms var(--transition-timing-func);
 }
 .textarea {
   width: 448px;
@@ -858,6 +868,7 @@ link:active {
   display: block;
   margin-right: 51px;
   margin-left: 77px;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 .checkbox-color {
@@ -865,9 +876,7 @@ link:active {
   display: inline;
   text-decoration: underline;
 }
-.checkbox-style {
-  margin-bottom: 30px;
-}
+
 .checkbox-icon {
   position: absolute;
   left: 52px;
@@ -889,12 +898,21 @@ link:active {
   justify-content: center;
   letter-spacing: 0.06em;
   color: var(--color-white);
-  background: #188ce8;
+  background: var(--color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-left: 165px;
   margin-right: 163px;
+  transition: background-color 250ms var(--transition-timing-func),
+    box-shadow 250ms var(--transition-timing-func);
 }
+.btn-submit:hover {
+  background: #1c84d8;
+}
+.btn-submit:focus {
+  background: #1c84d8;
+}
+
 textarea {
   resize: none;
 }
@@ -946,6 +964,7 @@ textarea {
 .ex-btn {
   height: 18px;
   width: 18px;
+  transition: fill 250ms var(--transition-timing-func);
 }
 .exit-btn:hover,
 .exit-btn:focus {
