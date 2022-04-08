@@ -905,6 +905,7 @@ link:active {
   margin-right: 163px;
   transition: background-color 250ms var(--transition-timing-func),
     box-shadow 250ms var(--transition-timing-func);
+  cursor: pointer;
 }
 .btn-submit:hover {
   background: #1c84d8;
